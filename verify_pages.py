@@ -26,6 +26,7 @@ team_members = [
     ('tm-kv', 'Krishnamurthy.jpeg', 'center 10%'),
     ('tm-ps', 'Pavan.jpeg', 'center 5%'),
     ('tm-bb', 'Basanagouda.jpeg', 'center 15%'),
+    ('tm-an', 'adesh-nayak.jpg', 'center 10%'),
     ('tm-sb', 'Sahil.jpeg', 'center 8%'),
     ('tm-as', 'Aditya-Sarawad.jpeg', 'center 12%'),
     ('tm-sj', 'Shilpa.jpeg', 'center 10%')

@@ -229,7 +229,9 @@ body:not(.clean) .blank:not(.blk)::after{content:"";}
 .legend{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--muted)}
 .legend i{display:inline-block;width:40px;border-bottom:1.5px dashed #8E94AB}
 /* team */
-.team{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.team{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+@media (min-width:1024px){.team-leader{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (min-width:641px) and (max-width:1023px){.team-leader{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .tm{border:1px solid var(--line);background:#fff;display:flex;flex-direction:column}
 .tm .ph{height:300px;background:var(--paper);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
 .tm .ph img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
@@ -484,7 +486,7 @@ footer.site .wrap{padding-top:44px;padding-bottom:30px}
 </div></div>
 <div class="wrap sec">
 <h2 class="h2">Leadership</h2>
-<div class="team">
+<div class="team team-leader">
 <article class="tm" id="tm-kv"><div class="ph"><img src="assets/team/Krishnamurthy.jpeg" alt="Krishnamurthy Vijayan style="object-position:center 10%"></div><div class="in">
 <p class="role">Chairman</p><h3>Krishnamurthy Vijayan</h3>
 <p>Guides governance and strategic direction. 39 years in mutual funds and asset management. Former CEO roles at JPMorgan India AMC, IDBI Mutual Fund and JM Financial Mutual Fund; Director on the AMFI Governing Council (2000–2013). Independent Director and Audit Committee Chairman, SBI Funds International (GIFT).</p>
@@ -497,6 +499,10 @@ footer.site .wrap{padding-top:44px;padding-bottom:30px}
 <p class="role">Co-Founder &amp; Managing Director</p><h3>Basanagouda Biradar</h3>
 <p>Oversees operations and fund management. Background in family-office investments and strategic planning for high-net-worth families.</p>
 <p class="ct"><a href="mailto:basanagoudab@globridgecapitalifsc.com">basanagoudab@globridgecapitalifsc.com</a></p></div></article>
+<article class="tm" id="tm-an"><div class="ph"><img src="assets/team/adesh-nayak.jpg" alt="Adesh Nayak style="object-position:center 10%"></div><div class="in">
+<p class="role">Partner – Marketing &amp; Business Development</p><h3>Adesh Nayak</h3>
+<p>Leads marketing and business development. Brings 15+ years of experience in construction project management with L&amp;T, Worley and Jacobs, before founding AVA Algo, an algorithmic trading platform. Comes from a family with business interests across construction, manufacturing, hospitality and IT. Also serves as Director at Khushal Growwealth Research and Liquivaults Technologies IFSC.</p>
+<p class="ct"><a href="mailto:admin@globridgecapitalifsc.com">admin@globridgecapitalifsc.com</a></p></div></article>
 </div>
 
 <h2 class="h2" style="margin-top:64px">Key officers for IFSC operations</h2>
