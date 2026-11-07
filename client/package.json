@@ -1,0 +1,10 @@
+{
+  "name": "globridge-capital-client",
+  "version": "1.0.0",
+  "description": "Frontend client for Globridge Capital IFSC",
+  "scripts": {
+    "dev": "node ../serve.js",
+    "start": "node ../serve.js"
+  }
+}
+

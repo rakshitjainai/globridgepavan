@@ -1,0 +1,10 @@
+{
+  "name": "globridge-capital-ifsc",
+  "version": "1.0.0",
+  "description": "Globridge Capital IFSC — Authorised FME registered with IFSCA, GIFT City",
+  "scripts": {
+    "dev": "node serve.js",
+    "start": "node serve.js",
+    "test": "python verify_pages.py"
+  }
+}
