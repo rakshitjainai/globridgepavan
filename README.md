@@ -66,6 +66,14 @@ npm test
 python verify_pages.py
 ```
 
+### Production Deployment (Vercel)
+The repository includes a production-ready `vercel.json` configured for static edge delivery:
+- **Framework Preset**: `Other`
+- **Root Directory**: `./`
+- **Output Directory**: `client`
+- **Build Command**: `npm run build` (or None)
+- **Install Command**: None
+
 ---
 
 ## 🌟 Key Features & Updates

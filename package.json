@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Globridge Capital IFSC — Authorised FME registered with IFSCA, GIFT City",
   "scripts": {
+    "build": "echo Static build ready",
     "dev": "node serve.js",
     "start": "node serve.js",
     "test": "python verify_pages.py"

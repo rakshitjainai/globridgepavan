@@ -1404,8 +1404,18 @@ footer.site .wrap{padding-top:44px;padding-bottom:30px}
     document.title=(pageTitle?pageTitle+' | ':'')+'Globridge Capital IFSC | IFSCA-registered Fund Management Entity, GIFT City';
     nav.classList.remove('open');mb.setAttribute('aria-expanded','false');
   }
+  function getRouteTarget(){
+    if(location.hash && location.hash.length > 1){
+      return decodeURIComponent(location.hash.slice(1));
+    }
+    var p = location.pathname.replace(/^\/+|\/+$/g, '').replace(/\.html$/, '');
+    if(p && p !== 'index'){
+      return decodeURIComponent(p);
+    }
+    return 'home';
+  }
   function route(){
-    var h=decodeURIComponent((location.hash||'#home').slice(1))||'home';
+    var h = getRouteTarget();
     if(arts[h]){
       document.querySelectorAll('.art-pane').forEach(function(el){el.style.display='none';});
       var ap=document.getElementById('art-'+h);
@@ -1427,7 +1437,9 @@ footer.site .wrap{padding-top:44px;padding-bottom:30px}
     if(pg){show(pg.id.slice(5));setTimeout(function(){el.scrollIntoView({behavior:"instant",block:"start"});},30);return;}
     show('home');window.scrollTo(0,0);
   }
-  window.addEventListener('hashchange',route);route();
+  window.addEventListener('hashchange',route);
+  window.addEventListener('popstate',route);
+  route();
   // same-hash clicks (e.g. clicking the current page's link) still scroll/refresh
   document.addEventListener('click',function(e){
     var a=e.target.closest('a[href^="#"]'); if(!a) return;
