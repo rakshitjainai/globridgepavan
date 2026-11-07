@@ -232,7 +232,11 @@ body:not(.clean) .blank:not(.blk)::after{content:"";}
 .team{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
 @media (min-width:1024px){.team-leader{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media (min-width:641px) and (max-width:1023px){.team-leader{grid-template-columns:repeat(2,minmax(0,1fr))}}
-.tm{border:1px solid var(--line);background:#fff;display:flex;flex-direction:column}
+@media (min-width:641px){
+  .team-leader .tm .role{min-height:44px;display:flex;align-items:flex-start}
+  .team-leader .tm h3{min-height:52px;display:flex;align-items:flex-start}
+}
+.tm{border:1px solid var(--line);background:#fff;display:flex;flex-direction:column;height:100%}
 .tm .ph{height:300px;background:var(--paper);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
 .tm .ph img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
 .tm .ph span{width:96px;height:96px;border-radius:50%;background:var(--navy);color:var(--gold-2);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:30px}
@@ -241,8 +245,8 @@ body:not(.clean) .blank:not(.blk)::after{content:"";}
 .tm h3{margin:0;font-family:var(--serif);font-weight:700;font-size:20px}
 .tm .role{margin:0}
 .tm p{margin:0;color:var(--body);font-size:14.5px}
-.tm .ct{margin-top:auto;padding-top:12px;border-top:1px solid var(--line);font-size:13.5px}
-.tm .ct a{text-decoration:none}
+.tm .ct{margin-top:auto;padding-top:12px;border-top:1px solid var(--line);font-size:13.5px;overflow-wrap:anywhere;word-break:break-word}
+.tm .ct a{text-decoration:none;overflow-wrap:anywhere;word-break:break-word;display:inline-block;max-width:100%}
 .mini{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
 .mini a{display:flex;gap:14px;align-items:center;text-decoration:none;color:var(--ink);border-top:1px solid var(--line);padding-top:16px}
 .mini a:hover h3{color:var(--gold-dark)}
@@ -487,19 +491,19 @@ footer.site .wrap{padding-top:44px;padding-bottom:30px}
 <div class="wrap sec">
 <h2 class="h2">Leadership</h2>
 <div class="team team-leader">
-<article class="tm" id="tm-kv"><div class="ph"><img src="assets/team/Krishnamurthy.jpeg" alt="Krishnamurthy Vijayan style="object-position:center 10%"></div><div class="in">
+<article class="tm" id="tm-kv"><div class="ph"><img src="assets/team/Krishnamurthy.jpeg" alt="Krishnamurthy Vijayan" style="object-position:center 10%"></div><div class="in">
 <p class="role">Chairman</p><h3>Krishnamurthy Vijayan</h3>
 <p>Guides governance and strategic direction. 39 years in mutual funds and asset management. Former CEO roles at JPMorgan India AMC, IDBI Mutual Fund and JM Financial Mutual Fund; Director on the AMFI Governing Council (2000–2013). Independent Director and Audit Committee Chairman, SBI Funds International (GIFT).</p>
 <p class="ct"><a href="mailto:admin@globridgecapitalifsc.com">admin@globridgecapitalifsc.com</a></p></div></article>
-<article class="tm" id="tm-ps"><div class="ph"><img src="assets/team/Pavan.jpeg" alt="Pavan Sarawad style="object-position:center 5%"></div><div class="in">
+<article class="tm" id="tm-ps"><div class="ph"><img src="assets/team/Pavan.jpeg" alt="Pavan Sarawad" style="object-position:center 5%"></div><div class="in">
 <p class="role">Founder &amp; Chief Investment Officer</p><h3>Pavan Sarawad</h3>
 <p>Leads investment strategy and decisions. Around 15 years in wealth creation and fund management, with a focus on private equity and cross-border investing.</p>
 <p class="ct"><a href="mailto:pavan@globridgecapitalifsc.com">pavan@globridgecapitalifsc.com</a></p></div></article>
-<article class="tm" id="tm-bb"><div class="ph"><img src="assets/team/Basanagouda.jpeg" alt="Basanagouda Biradar style="object-position:center 15%"></div><div class="in">
+<article class="tm" id="tm-bb"><div class="ph"><img src="assets/team/Basanagouda.jpeg" alt="Basanagouda Biradar" style="object-position:center 15%"></div><div class="in">
 <p class="role">Co-Founder &amp; Managing Director</p><h3>Basanagouda Biradar</h3>
 <p>Oversees operations and fund management. Background in family-office investments and strategic planning for high-net-worth families.</p>
-<p class="ct"><a href="mailto:basanagoudab@globridgecapitalifsc.com">basanagoudab@globridgecapitalifsc.com</a></p></div></article>
-<article class="tm" id="tm-an"><div class="ph"><img src="assets/team/adesh-nayak.jpg" alt="Adesh Nayak style="object-position:center 10%"></div><div class="in">
+<p class="ct"><a href="mailto:basanagoudab@globbridgecapitalifsc.com">basanagoudab@globbridgecapitalifsc.com</a></p></div></article>
+<article class="tm" id="tm-an"><div class="ph"><img src="assets/team/adesh-nayak.jpg" alt="Adesh Nayak" style="object-position:center 10%"></div><div class="in">
 <p class="role">Partner – Marketing &amp; Business Development</p><h3>Adesh Nayak</h3>
 <p>Leads marketing and business development. Brings 15+ years of experience in construction project management with L&amp;T, Worley and Jacobs, before founding AVA Algo, an algorithmic trading platform. Comes from a family with business interests across construction, manufacturing, hospitality and IT. Also serves as Director at Khushal Growwealth Research and Liquivaults Technologies IFSC.</p>
 <p class="ct"><a href="mailto:admin@globridgecapitalifsc.com">admin@globridgecapitalifsc.com</a></p></div></article>
