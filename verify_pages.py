@@ -135,6 +135,7 @@ print("[PASS] Complete Terms of Use (13 sections) and Privacy Policy (11 section
 
 # 11. Verify SEO Metadata and Robots Tag (Task 3)
 assert '<meta name="robots" content="index, follow">' in html, "Missing or incorrect meta robots tag!"
+assert '<meta name="google-site-verification" content="BH4OfpaIxzI56UK95HzHbWSpuBJ1oTx-FlmOw8x4BR4" />' in html, "Missing Google Search Console verification meta tag!"
 assert 'noindex' not in html, "Found 'noindex' directive in HTML!"
 assert 'nofollow' not in html, "Found 'nofollow' directive in HTML!"
 assert 'noarchive' not in html, "Found 'noarchive' directive in HTML!"
